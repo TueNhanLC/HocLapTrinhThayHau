@@ -1,0 +1,82 @@
+#include <math.h>
+
+bool SoNguyenTo(int n)
+{
+    if (n < 2) return false;
+
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
+
+int KiemTraChanLe(int a) {
+    return (a % 2 == 0) ? 1 : 0;
+}
+
+int UCLN(int a = 0, int b = 0)
+{
+    while(a!=0)
+    {
+        if(a>b)
+        {
+            a = a - b;
+        }
+        else
+        {
+            b = b - a;
+        }
+    }
+    return a;
+}
+
+int BCNN(int a, int b)
+{
+    return a*b/UCLN(a, b);
+}
+
+int KTNT(int n)
+{
+    if (n < 2) return 0; 
+    int dem = 0;
+    for(int i = 1; i <= n; i++) 
+    {
+        if(n % i == 0)
+        {
+            dem++;
+        }
+    }
+    
+    if (dem == 2) return 1; 
+    else return 0;
+}
+
+bool isPerfect(int n) {
+    // Số hoàn hảo phải là số nguyên dương lớn hơn 1
+    if (n <= 1) return false;
+
+    int sum = 1; // 1 luôn là ước của mọi số dương
+    
+    // Tối ưu: Chỉ duyệt đến căn bậc hai của n
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            if (i * i != n) {
+                sum += i + (n / i); // Cộng cả cặp ước
+            } else {
+                sum += i; // Nếu là số chính phương thì chỉ cộng một lần
+            }
+        }
+    }
+
+    return sum == n;
+}
+
+bool KiemTraChinhPhuong(int n = 0)
+{
+    int a = 0;
+    a = sqrt(n);
+    return n == a;
+}
+
