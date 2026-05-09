@@ -4,7 +4,7 @@
 int main()
 {
     freopen("INPUT.INP", "r", stdin);
-    freopen("OUTPUT.INP", "w", stdout);
+    freopen("OUTPUT.OUT", "w", stdout);
     long long n;
     std::cin >> n;
 
