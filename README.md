@@ -1,4 +1,3 @@
-# HocLapTrinhThayHau
-about a class and this repo is source code
-- when commit can include what did we learn
-Ex: learn about contact with file, can commit "learn freopen"
+-  Description: 📚 Source code and exercises from Thay Hau's programming class.
+- Commit Convention: Describe what you've learned.
+- Example: git commit -m "feat: learn freopen for file handling"
