@@ -64,5 +64,14 @@ process_code "$abc" "git push"
 
 if [[ $clear_a == "y" || $clear_a == "Y" ]]; then clear; echo cleared screen, for more information, please visit log.txt; fi
 
+
+
 # ket thuc log
 exit_file
+
+# cap nhat file log
+git add log.txt
+git commit -m "update file log, running near the end of the file"
+git push
+
+exit 0
