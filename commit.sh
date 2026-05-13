@@ -46,17 +46,17 @@ abc=20;
 # goi ham process code sau moi lan chay
 git add . 
 abc=$?
-echo status of git add: "$abc" >> log.txt  # ma loi cua git add duoc ghi vào file log.txt
+#echo status of git add: "$abc" >> log.txt  # ma loi cua git add duoc ghi vào file log.txt
 process_code "$abc" "git add"
 
 git commit -m "at $(date +'%Y-%m-%d %H:%M:%S') with content $content"
 abc=$?
-echo status of git commit: "$abc" >> log.txt
+#echo status of git commit: "$abc" >> log.txt
 process_code "$abc" "git commit"
 
 git push
 abc=$?
-echo status of git push: "$abc" >> log.txt
+#echo status of git push: "$abc" >> log.txt
 process_code "$abc" "git push"
 
 if [[ $clear_a == "y" || $clear_a == "Y" ]]; then clear; echo cleared screen, for more information, please visit log.txt; fi
