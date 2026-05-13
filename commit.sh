@@ -39,6 +39,9 @@ fi
 read -rp "type commit content: " content
 read -rp "do you want to clear screen after push? enter y/n: " clear_a
 
+echo commit content: "$content" >> log.txt
+echo clear screen after push: "$clear_a" >> log.txt
+
 # khai bao bien moi chua $?
 abc=20;
 
