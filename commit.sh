@@ -16,8 +16,8 @@ function process_code( )
 # function exit log file
 function exit_file()
 {
-    echo log end at "$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -----------------------------------------------------------------------------
+    echo log end at "$(date +'%Y-%m-%d %H:%M:%S')" >> log.txt
+    echo ----------------------------------------------------------------------------- >> log.txt
 }
 
 
