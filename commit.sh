@@ -25,7 +25,6 @@ function exit_file()
     echo ----------------------------------------------------------------------------- >> log.txt
 }
 
-
 # file bat dau ghi log
 echo started commit at "$(date +'%Y-%m-%d %H:%M:%S')" >> log.txt 
 git status
@@ -61,9 +60,6 @@ git push
 abc=$?
 #echo status of git push: "$abc" >> log.txt
 process_code "$abc" "git push"
-
-
-
 
 # ket thuc log
 exit_file
