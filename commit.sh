@@ -11,6 +11,7 @@ function process_code( )
     echo task: "$task_a";
     echo task "$2" have error with exit code: "$1" 
     echo status of "$2": "$1" >> log.txt
+    exit_file
     exit 0
     else 
     echo status of "$2": "$1" >> log.txt
