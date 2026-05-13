@@ -38,11 +38,13 @@ read -rp "type commit content: " content
 read -rp "do you want to clear screen after push? enter y/n: " clear_a
 
 git add . 
-
 echo status of git add: $? >> log.txt  # ma loi cua git add duoc ghi vào file log.txt
 
 git commit -m "at $(date +'%Y-%m-%d %H:%M:%S') with content $content"
+echo status of git commit: $? >> log.txt
+
 git push
+echo status of git push: $? >> log.txt
 
 if [[ $clear_a == "y" || $clear_a == "Y" ]]; then clear; echo cleared screen, for more information, please visit log.txt; fi
 
