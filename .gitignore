@@ -1,3 +1,8 @@
+# Bỏ qua toàn bộ file log nhật ký local
 log.txt
+
+# Bỏ qua toàn bộ file thực thi nhị phân sau khi biên dịch
+HelloWorld
 *.out
-*.inp
+*.exe
+*.o
