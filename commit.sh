@@ -10,6 +10,9 @@ function process_code( )
     echo something error, please check log.txt ;
     echo task: "$task_a";
     echo task "$2" have error with exit code: "$1" 
+    echo status of "$2": "$1" >> log.txt
+    else 
+    echo status of "$2": "$1" >> log.txt
     fi
 }
 
