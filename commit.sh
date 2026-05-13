@@ -11,6 +11,7 @@ function process_code( )
     echo task: "$task_a";
     echo task "$2" have error with exit code: "$1" 
     echo status of "$2": "$1" >> log.txt
+    exit 0
     else 
     echo status of "$2": "$1" >> log.txt
     fi
@@ -37,14 +38,25 @@ fi
 read -rp "type commit content: " content
 read -rp "do you want to clear screen after push? enter y/n: " clear_a
 
+# khai bao bien moi chua $?
+abc=20;
+
+# git add/commit/push deu duoc ghi ma return code vao log.txt
+# goi ham process code sau moi lan chay
 git add . 
-echo status of git add: $? >> log.txt  # ma loi cua git add duoc ghi vào file log.txt
+abc=$?
+echo status of git add: "$abc" >> log.txt  # ma loi cua git add duoc ghi vào file log.txt
+process_code "$abc" "git add"
 
 git commit -m "at $(date +'%Y-%m-%d %H:%M:%S') with content $content"
-echo status of git commit: $? >> log.txt
+abc=$?
+echo status of git commit: "$abc" >> log.txt
+process_code "$abc" "git commit"
 
 git push
-echo status of git push: $? >> log.txt
+abc=$?
+echo status of git push: "$abc" >> log.txt
+process_code "$abc" "git push"
 
 if [[ $clear_a == "y" || $clear_a == "Y" ]]; then clear; echo cleared screen, for more information, please visit log.txt; fi
 
