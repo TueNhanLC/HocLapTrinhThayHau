@@ -78,3 +78,8 @@ log end at 2026-05-13 21:53:06
 started commit at 2026-05-14 17:12:37
 commit content: just a log file
 clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-14 17:12:50
+-----------------------------------------------------------------------------
