@@ -102,3 +102,8 @@ log end at 2026-05-14 18:04:10
 started commit at 2026-05-15 11:50:55
 commit content: change log txt to log_commit.txt, update commit.sh
 clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-15 11:51:25
+-----------------------------------------------------------------------------
