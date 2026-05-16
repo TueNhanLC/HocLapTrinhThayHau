@@ -21,10 +21,8 @@ This project integrates a Bash script for automatically trapping system errors a
 
 ### How to run the Script:
 
-```bash
+bash: ./commit.sh
 
-./commit.sh
-```
 ## 📊 Technologies Used
 * **Language:** C++, Bash/Shell
 * **OS Environment:** Linux (Ubuntu/Debian) on ThinkPad X1 Carbon Gen 9
