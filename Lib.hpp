@@ -40,18 +40,19 @@ int BCNN(int a, int b)
 int KTNT(int n)
 {
     if (n < 2) return 0; 
-    int dem = 0;
-    for(int i = 1; i <= n; i++) 
+    
+    // Chỉ chạy đến căn bậc hai của n
+    for(int i = 2; i * i <= n; i++) 
     {
         if(n % i == 0)
         {
-            dem++;
+            return true; // Thấy chia hết là dừng luôn, trả về 0
         }
     }
     
-    if (dem == 2) return 1; 
-    else return 0;
+    return false; // Không chia hết cho số nào thì là số nguyên tố
 }
+
 
 bool isPerfect(int n) {
     // Số hoàn hảo phải là số nguyên dương lớn hơn 1
