@@ -1,4 +1,34 @@
 #include <math.h>
+#include <vector>
+
+std::vector<int> primeFactorize(int n) {
+    std::vector<int> factors;
+    
+    // Trường hợp số nhỏ hơn hoặc bằng 1 (không có thừa số nguyên tố)
+    if (n <= 1) return factors;
+
+    // 1. Tách riêng toàn bộ thừa số 2 để sau đó chỉ cần duyệt qua các số lẻ
+    while (n % 2 == 0) {
+        factors.push_back(2);
+        n /= 2;
+    }
+
+    // 2. Duyệt qua các số lẻ từ 3 đến căn bậc hai của n
+    // Điều kiện i * i <= n tương đương với i <= sqrt(n) nhưng chạy nhanh hơn
+    for (int i = 3; i * i <= n; i += 2) {
+        while (n % i == 0) {
+            factors.push_back(i);
+            n /= i; // Giảm n đi i lần
+        }
+    }
+
+    // 3. Nếu sau các bước trên mà n vẫn lớn hơn 1, thì bản thân n còn lại là một số nguyên tố
+    if (n > 1) {
+        factors.push_back(n);
+    }
+
+    return factors;
+}
 
 bool SoNguyenTo(int n)
 {
