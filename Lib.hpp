@@ -1,5 +1,28 @@
 #include <math.h>
 #include <vector>
+#include <algorithm>
+
+std::vector<int> tachChuSo(long long n) {
+    std::vector<int> danhSachChuSo;
+
+    // Trường hợp đặc biệt nếu N bằng 0
+    if (n == 0) {
+        danhSachChuSo.push_back(0);
+        return danhSachChuSo;
+    }
+
+    // Vòng lặp tách từng chữ số
+    while (n > 0) {
+        int chuSo = n % 10;          // Lấy chữ số hàng đơn vị
+        danhSachChuSo.push_back(chuSo); // Thêm vào danh sách
+        n /= 10;                     // Cắt bỏ chữ số vừa lấy
+    }
+
+    // Đảo ngược danh sách để các chữ số theo đúng thứ tự từ trái sang phải
+    std::reverse(danhSachChuSo.begin(), danhSachChuSo.end());
+
+    return danhSachChuSo;
+}
 
 std::vector<int> primeFactorize(int n) {
     std::vector<int> factors;
