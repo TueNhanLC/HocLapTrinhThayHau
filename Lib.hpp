@@ -69,21 +69,15 @@ int KiemTraChanLe(int a) {
     return (a % 2 == 0) ? 1 : 0;
 }
 
-int UCLN(int a = 0, int b = 0)
-{
-    while(a!=0)
-    {
-        if(a>b)
-        {
-            a = a - b;
-        }
-        else
-        {
-            b = b - a;
-        }
+int UCLN(int a, int b) {
+    while (b != 0) {
+        int r = a % b;
+        a = b;
+        b = r;
     }
     return a;
 }
+
 
 int BCNN(int a, int b)
 {
