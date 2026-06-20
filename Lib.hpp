@@ -93,11 +93,11 @@ int KTNT(int n)
     {
         if(n % i == 0)
         {
-            return true; // Thấy chia hết là dừng luôn, trả về 0
+            return false; // Thấy chia hết là dừng luôn, trả về 0
         }
     }
     
-    return false; // Không chia hết cho số nào thì là số nguyên tố
+    return true; // Không chia hết cho số nào thì là số nguyên tố
 }
 
 
