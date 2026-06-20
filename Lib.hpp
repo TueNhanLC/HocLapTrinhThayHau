@@ -2,6 +2,32 @@
 #include <vector>
 #include <algorithm>
 
+std::vector<int> findDivisors(int n) {
+    std::vector<int> divisors;
+    
+    // Trường hợp n <= 0 (bạn có thể điều chỉnh tùy theo yêu cầu đề bài)
+    if (n <= 0) return divisors;
+
+    // Duyệt từ 1 đến căn bậc hai của n
+    for (int i = 1; i * i <= n; i++) {
+        if (n % i == 0) {
+            divisors.push_back(i); // i là ước số thứ nhất
+            
+            // Nếu ước số còn lại (n / i) khác i thì mới thêm vào để tránh trùng lặp
+            if (i * i != n) {
+                divisors.push_back(n / i);
+            }
+        }
+    }
+
+    // Sắp xếp lại các ước theo thứ tự tăng dần
+    std::sort(divisors.begin(), divisors.end());
+
+    return divisors;
+}
+
+
+
 std::vector<int> tachChuSo(long long n) {
     std::vector<int> danhSachChuSo;
 
@@ -23,7 +49,7 @@ std::vector<int> tachChuSo(long long n) {
 
     return danhSachChuSo;
 }
-
+// phan tich 1 so ra thua so nguyen to
 std::vector<int> primeFactorize(int n) {
     std::vector<int> factors;
     
@@ -84,7 +110,7 @@ int BCNN(int a, int b)
     return a*b/UCLN(a, b);
 }
 
-int KTNT(int n)
+bool KTNT(int n)
 {
     if (n < 2) return 0; 
     
@@ -121,10 +147,11 @@ bool isPerfect(int n) {
     return sum == n;
 }
 
-bool KiemTraChinhPhuong(int n = 0)
+bool KiemTraChinhPhuong(int n)
 {
-    int a = 0;
-    a = sqrt(n);
-    return n == a;
+    if (n < 0) return false; // Số âm không phải số chính phương
+    int a = sqrt(n);
+    return (a * a == n);     // SỬA Ở ĐÂY: kiểm tra bình phương
 }
+
 
