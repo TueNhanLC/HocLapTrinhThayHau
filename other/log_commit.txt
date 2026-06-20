@@ -1,0 +1,99 @@
+started commit at 2026-05-16 16:04:26
+commit content: clean log
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 1
+log end at 2026-05-16 16:04:33
+-----------------------------------------------------------------------------
+started commit at 2026-05-16 16:05:45
+commit content: clean log
+clear screen after push: n
+status of git add: 0
+status of git commit: 0
+status of git push: 1
+log end at 2026-05-16 16:05:51
+-----------------------------------------------------------------------------
+started commit at 2026-05-16 18:46:56
+commit content: nothing
+clear screen after push: n
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-16 18:47:24
+-----------------------------------------------------------------------------
+started commit at 2026-05-16 20:37:12
+commit content: just review knowedge, not learn new anything
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-16 20:37:35
+-----------------------------------------------------------------------------
+started commit at 2026-05-16 20:45:47
+commit content: just review knowedge, not learn new anything
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-16 20:46:12
+-----------------------------------------------------------------------------
+started commit at 2026-05-17 16:52:06
+commit content: on tap, ko hoc them gi moi
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-17 16:52:20
+-----------------------------------------------------------------------------
+started commit at 2026-05-23 21:16:56
+commit content: just review, not learn new
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-05-23 21:17:13
+-----------------------------------------------------------------------------
+started commit at 2026-06-06 19:24:46
+commit content: not learn new things
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-06-06 19:24:55
+-----------------------------------------------------------------------------
+started commit at 2026-06-08 08:38:55
+commit content: not learn new things
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-06-08 08:39:06
+-----------------------------------------------------------------------------
+started commit at 2026-06-20 09:09:09
+commit content: not learn new things
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-06-20 09:09:16
+-----------------------------------------------------------------------------
+started commit at 2026-06-20 09:40:17
+commit content: modifided Function KTNT, change True False
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-06-20 09:40:40
+-----------------------------------------------------------------------------
+started commit at 2026-06-20 21:30:48
+commit content: Not learn new anything
+clear screen after push: y
+status of git add: 0
+status of git commit: 0
+status of git push: 0
+log end at 2026-06-20 21:30:59
+-----------------------------------------------------------------------------
+started commit at 2026-06-20 21:56:06
+commit content: sort
+clear screen after push: y
